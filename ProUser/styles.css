@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.dark-mode .info-card {
+    background-color: #2d2d2d;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode label {
+    color: #f0f0f0;
+}
+
+.dark-mode input[type="text"] {
+    background-color: #3d3d3d;
+    border-color: #555;
+    color: #f0f0f0;
+}
+
+.dark-mode .help-link, .dark-mode .contact-link {
+    color: #7fdbff;
+}
+
+.dark-mode .help-link:hover, .dark-mode .contact-link:hover {
+    color: #5fa8d3;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Logo 样式 */
+.logo-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+/* 主要内容区样式 */
+.main-content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.info-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* 信息项样式 */
+.info-item {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+/* 状态容器样式 */
+.status-container {
+    display: flex;
+    align-items: center;
+}
+
+#status-text {
+    margin-right: 10px;
+    color: #27ae60;
+}
+
+#account-id-show {
+    color: #3498db;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* 密钥容器样式 */
+.key-container {
+    display: flex;
+    gap: 10px;
+}
+
+/* 底部链接样式 */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.help-link, .contact-link {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.help-link:hover, .contact-link:hover {
+    color: #2980b9;
+}
