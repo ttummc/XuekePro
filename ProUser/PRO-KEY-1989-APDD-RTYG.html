@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学科模拟器Pro激活密钥</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo-container">
+            <img src="https://pic1.imgdb.cn/item/68de8b01c5157e1a8850e26e.png" alt="学科模拟器 Pro Logo" class="logo">
+            <h1>学科模拟器Pro激活密钥</h1>
+        </div>
+
+        <!-- 主要内容区 -->
+        <div class="main-content">
+            <!-- 密钥信息卡片 -->
+            <div class="info-card">
+                <h2>密钥详细信息</h2>
+                
+                <div class="info-item">
+                    <label for="key-id">密钥 ID:</label>
+                    <input type="text" id="key-id" value="A-2025-01003" readonly>
+                </div>
+
+                <div class="info-item">
+                    <label for="sale-time">销售时间:</label>
+                    <input type="text" id="sale-time" value="2025-10-4" readonly>
+                </div>
+
+                <div class="info-item">
+                    <label for="sale-method">销售方式:</label>
+                    <input type="text" id="sale-method" value="其他" readonly>
+                </div>
+
+                <div class="info-item">
+                    <label for="last-activation">最后激活日期:</label>
+                    <input type="text" id="last-activation" value="长期" readonly>
+                </div>
+
+                <div class="info-item">
+                    <label for="anti-loss-status">防丢失状态:</label>
+                    <div class="status-container">
+                        <span id="status-text">未启用</span>
+                        <span id="account-id-show" class="hidden">账号: -2</span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <label for="activation-key">激活密钥:</label>
+                    <div class="key-container">
+                        <input type="text" id="activation-key" value="PRO-KEY-1989-APDD-RTYG" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部链接 -->
+        <div class="footer-links">
+            <a href="#" class="help-link">需要帮助？</a>
+            <a href="#" class="contact-link">联系客服</a>
+        </div>
+    </div>
+    <script>
+        // 检测系统是否为暗色模式
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.body.classList.add('dark-mode');
+        }
+
+        // 监听系统主题变化
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.body.classList.add('dark-mode');
+            } else {
+                document.body.classList.remove('dark-mode');
+            }
+        });
+
+        // 手动切换暗色模式
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
